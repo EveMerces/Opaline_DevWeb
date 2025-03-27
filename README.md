@@ -1,12 +1,16 @@
 Seja bem vindo ao Opaline_DevWeb!
 
-• Cadastro e login de usuários
-• Página inicial com apresentação dos produtos
-• Interface responsiva e amigável
-
 Documentação de api para a utilização do projeto: https://github.com/EveMerces/project-dw 
 
-Tecnologias utilizadas para construir o projeto:
+🔧 Funcionalidades
+
+🔹 Cadastro de Usuário: Permite criar uma conta na plataforma
+
+🔹 Login: Autentica o usuário e armazena sessão
+
+🔹 Página Inicial: Exibe produtos disponíveis na loja
+
+Tecnologias Utilizadas no Desenvolvimento:
 
 | Linguagem   | Ícone  |
 |------------|--------|
