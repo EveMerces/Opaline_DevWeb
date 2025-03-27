@@ -1,5 +1,5 @@
 Seja bem vindo ao Opaline_DevWeb!
-Opaline é um e-commerce de moda que oferece uma experiência intuitiva para os usuários realizarem compras online. O projeto inclui funcionalidades essenciais como:
+
 • Cadastro e login de usuários
 • Página inicial com apresentação dos produtos
 • Interface responsiva e amigável
