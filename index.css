@@ -1,0 +1,81 @@
+body {
+    color: rgb(51, 2, 25); /* Define a cor do texto para um tom de vermelho escuro */
+    background-color: rgb(255, 232, 216); /* Define a cor de fundo para um tom claro de bege */
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte do texto para Arial, Helvetica ou uma fonte sans-serif */
+}
+
+ul {
+    display: flex; /* Torna a lista flexível */
+    justify-content: space-between; /* Distribui os itens igualmente, com espaçamento entre eles */
+    list-style-type: none; /* Remove as bolinhas dos itens da lista */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    padding: 16px; /* Define um preenchimento interno de 16px */
+}
+
+
+a {
+    color: rgb(49, 3, 35); /* Cor do texto dos links será branca */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+header img {
+    width: 100vw; /* A largura da imagem será 100% da largura da janela de visualização (viewport) */
+    height: 580px; /* A altura será de 580px */
+}
+
+.center {
+    text-align: center; /* Alinha o texto no centro */
+}
+
+h1 {
+    color: #460430; /* Define a cor do texto como um tom escuro de roxo */
+}
+
+footer img {
+    width: 40px; /* A largura da imagem será de 40px */
+    height: 40px; /* A altura será de 40px */
+}
+
+footer {
+    display: flex; /* Torna o rodapé um container flexível */
+    justify-content: center; /* Centraliza os itens no rodapé */
+}
+
+footer a {
+    margin: 20px; /* Adiciona margem de 20px ao redor dos links */
+    text-align: center; /* Alinha o texto no centro dos links */
+}
+
+footer p {
+    margin-top: 2px; /* Adiciona uma margem superior de 2px no parágrafo */
+}
+
+.container {
+    padding: 0px 0px; /* Define padding de 0px no topo e na base e 0px nas laterais */
+}
+
+nav a {
+    font-size: 20px; /* Define o tamanho da fonte dos links de navegação como 20px */
+}
+
+nav a:hover {
+    color: #3d0224; /* Altera a cor do link para um tom mais escuro de roxo quando o cursor passa sobre ele */
+}
+
+.contact-form input {
+    width: 100%; /* Os campos de entrada ocupam toda a largura disponível */
+    padding: 8px 0; /* Define o preenchimento de 8px na parte superior e inferior */
+    margin: 8px 0; /* Adiciona uma margem de 8px em cima e embaixo dos campos */
+}
+
+.contact-form input[type=text] {
+    height: 100px; /* Define uma altura de 100px para campos de texto */
+}
+
+button {
+    color: rgb(39, 1, 25); /* Cor do texto do botão será um tom escuro de vermelho */
+    background-color: rgb(248, 144, 187); /* Cor de fundo do botão será rosa */
+    border: none; /* Sem borda */
+    width: 100px; /* Largura fixa de 100px */
+    height: 30px; /* Altura fixa de 30px */
+}
