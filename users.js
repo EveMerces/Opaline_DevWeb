@@ -1,20 +1,20 @@
 //Declaração da função save, que pela palavra async, indica que a função irá retornar uma promise no futuro da aplicação.
 async function save (){
-    // Criação das variáveis com valores fictícios que posteriormente serão enviadas para o servidor para a realização do cadastro
-    let name = "Ana ju";
-    let email = "wolfram8980@uorak.com";
-    let userType = 1;
-    let password = "1234";
-    let termos = 1;
-    let birthday = "2006-20-12"
-    let cpfCnpj = "25652054000162"
+    let name = document.getElementByID("nome").value;
+    let email = document.getElementById("email").value;
+    let birthday = document.getElementById("email").value;
+    let password = document.getElementById("senha").value;
+    const CpfCnpj = "25652054000162";
+    let userType = 1
+    let termos = 1
+    
 // Criação do objeto dados que recebe todas as informações que foram antes declaradas
     dados = {
           "name": name,
           "email": email,
           "user_type_id": userType,
           "password": password,
-          "cpf_cnpj": cpfCnpj,
+          "cpf_cnpj": CpfCnpj,
           "terms": termos,
           "birthday": birthday
     }
