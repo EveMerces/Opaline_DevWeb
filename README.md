@@ -1,5 +1,12 @@
 Seja bem vindo ao Opaline_DevWeb!
-Documentação de api para a utilização do projeto: https://github.com/EveMerces/project-dw Tecnologias utilizadas para construir o projeto:
+Opaline é um e-commerce de moda que oferece uma experiência intuitiva para os usuários realizarem compras online. O projeto inclui funcionalidades essenciais como:
+• Cadastro e login de usuários
+• Página inicial com apresentação dos produtos
+• Interface responsiva e amigável
+
+Documentação de api para a utilização do projeto: https://github.com/EveMerces/project-dw 
+
+Tecnologias utilizadas para construir o projeto:
 
 | Linguagem   | Ícone  |
 |------------|--------|
