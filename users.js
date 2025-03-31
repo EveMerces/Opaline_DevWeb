@@ -2,7 +2,8 @@
 async function save (){
     let name = document.getElementByID("nome").value;
     let email = document.getElementById("email").value;
-    let birthday = document.getElementById("email").value;
+    let cpf_cnpj = document.getElementById("cpf/cnpj").value
+    let birthday = document.getElementById("date").value;
     let password = document.getElementById("senha").value;
     const CpfCnpj = "25652054000162";
     let userType = 1
@@ -12,7 +13,7 @@ async function save (){
     dados = {
           "name": name,
           "email": email,
-          "user_type_id": userType,
+          "user_type_id": userType, 
           "password": password,
           "cpf_cnpj": CpfCnpj,
           "terms": termos,
