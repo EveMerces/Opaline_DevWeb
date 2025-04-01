@@ -5,42 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <script src="users.js"></script>
-    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-        <div class="right">
-            <!-- Imagem do cabeçalho -->
-            <img src=""></img>
-            
-            <!-- Título principal da página -->
-            <h1>Cadastro </h1>
-        </div>
-    </header>
-
-
     <form>
-       <label> Nome: </label>
-       <input type = "text" name = "nome" id = "nome">
-
-        <label> Email: </label> 
-        <input type = "email" name = "email" id ="email">
-
-        <label> CPF/CNPJ: </label> 
-        <input type = "cpf/cnpj" name = "cpf/cnpj" id ="cpf/cnpj">
-
-        <label> Data de Nascimento: </label>
-        <input type = "date" name = "datanasc">
-
-        <label> Senha: </label>
-        <input type = "password" name = senha>
-
-        <label> Termo: </label>
-         <!-- Criação de um botão que servirá para o termo-->
-        <input type = "checkbox" name = "termo" id= "termo">
-
-        <!-- Criação de um botão que servirá para o dacastro do usuário.-->
-        <input type="button" value="Cadastro" onclick="cadastro()"/>
+        <label> Nome <input type = "text" name = "nome" id = "nome"/></label> 
+        <label> Email <input type = "email" name = "email" id = "email" /></label> 
+        <label> Data de nascimento <input type = "date" name = "datanasc" id = "datanasc" /></label> 
+        <label> CPF/CNPJ <input type = "text" name = "cpfcnpj" id = "cpfcnpj" /></label> 
+        <label> Senha <input type = "password" name = "senha" id = "senha" /></label> 
+        <label>Termos <input type = "checkbox" name = "termos" id = "termos"/></label>
+        <input type="button" value="Cadastrar" onclick="cadastro()"/>
         
     </form>
 </body>

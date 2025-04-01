@@ -1,151 +1,81 @@
-/* Definições gerais */
 body {
-    color: #caa192;
-    background-color: #6f3b39;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+    color: rgb(51, 2, 25); /* Define a cor do texto para um tom de vermelho escuro */
+    background-color: rgb(255, 232, 216); /* Define a cor de fundo para um tom claro de bege */
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte do texto para Arial, Helvetica ou uma fonte sans-serif */
 }
 
-/* Cabeçalho e navegação */
-header {
-    background-color: #492929;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px 40px;
-}
-.quebra_linha{
-    background-color: #4a2c2a;
-    color: #fff;
-    text-align: center;
-    font-size: 14px;
-    padding:10px;
-    margin:10px;
+ul {
+    display: flex; /* Torna a lista flexível */
+    justify-content: space-between; /* Distribui os itens igualmente, com espaçamento entre eles */
+    list-style-type: none; /* Remove as bolinhas dos itens da lista */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    padding: 16px; /* Define um preenchimento interno de 16px */
 }
 
-/* Navegação principal */
-.main-nav ul {
-    display: flex;
-    justify-content: center; /* Centraliza os itens na barra de navegação */
-    gap:380px; /* Espaçamento entre os itens *
-    list-style: none; /* Remove marcadores */
-    padding: 0;
-    margin: 0;
+
+a {
+    color: rgb(49, 3, 35); /* Cor do texto dos links será branca */
+    text-decoration: none; /* Remove o sublinhado dos links */
 }
 
-.main-nav ul li {
-    text-align: center; /* Mantém os itens alinhados */
+header img {
+    width: 100vw; /* A largura da imagem será 100% da largura da janela de visualização (viewport) */
+    height: 580px; /* A altura será de 580px */
 }
 
-.main-nav ul li a {
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    color: #f8e7dd;
-    padding: 10px 15px; /* Adiciona espaçamento interno aos links */
-    border-radius: 5px; /* Bordas arredondadas para um visual mais amigável */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona suavidade na interação */
+.center {
+    text-align: center; /* Alinha o texto no centro */
 }
 
-.main-nav ul li a:hover {
-    background-color: #f49292; /* Adiciona um fundo ao passar o mouse */
-    color: #fff; /* Altera a cor do texto no hover */
+h1 {
+    color: #460430; /* Define a cor do texto como um tom escuro de roxo */
 }
 
-.main-nav ul li a:hover {
-    color: #9e4040; /* Efeito de destaque nos links ao passar o mouse */
+footer img {
+    width: 40px; /* A largura da imagem será de 40px */
+    height: 40px; /* A altura será de 40px */
 }
 
-/* Título Grande */
-.main-title {
-    font-size: 48px;
-    font-family: "Georgia", serif;
-    color: #f8e7dd;
-    margin: 20px 0;
-}
-.main-title::after {
-    content: "✿"; /* Símbolo decorativo */
-    font-size: 50px;
-    color: #9e4040;
-    display: block;
-    text-align: center;
-    margin-top: 10px;
+footer {
+    display: flex; /* Torna o rodapé um container flexível */
+    justify-content: center; /* Centraliza os itens no rodapé */
 }
 
-/* Layout das categorias */
-.categories {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 10px;
+footer a {
+    margin: 20px; /* Adiciona margem de 20px ao redor dos links */
+    text-align: center; /* Alinha o texto no centro dos links */
 }
 
-.category {
-    background-color: #fff;
-    text-align: center;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
+footer p {
+    margin-top: 2px; /* Adiciona uma margem superior de 2px no parágrafo */
 }
 
-.category:hover {
-    transform: translateY(-5px);
+.container {
+    padding: 0px 0px; /* Define padding de 0px no topo e na base e 0px nas laterais */
 }
 
-.category img {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-    border-radius: 8px;
+nav a {
+    font-size: 20px; /* Define o tamanho da fonte dos links de navegação como 20px */
 }
 
-.category p {
-    margin: 8px 0;
-    font-size: 16px;
-    color: #4a2c2a;
+nav a:hover {
+    color: #3d0224; /* Altera a cor do link para um tom mais escuro de roxo quando o cursor passa sobre ele */
 }
 
-.category p strong {
-    font-size: 18px;
-    color: #8b1e1e;
+.contact-form input {
+    width: 100%; /* Os campos de entrada ocupam toda a largura disponível */
+    padding: 8px 0; /* Define o preenchimento de 8px na parte superior e inferior */
+    margin: 8px 0; /* Adiciona uma margem de 8px em cima e embaixo dos campos */
 }
 
-.about-us {
-    text-align: center;
-    max-width: 800px;
-    margin: 30px auto; /* Centraliza a seção */
-    padding: 20px;
-    background-color: #ffffff; /*Adiciona um fundo branco */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra leve */
+.contact-form input[type=text] {
+    height: 100px; /* Define uma altura de 100px para campos de texto */
 }
 
-.about-us h2 {
-    font-family: 'Georgia', serif; /* Fonte clássica e bonita */
-    font-size: 32px;
-    color: #c27878; /* Cor sofisticada */
-    margin-bottom: 20px;
+button {
+    color: rgb(39, 1, 25); /* Cor do texto do botão será um tom escuro de vermelho */
+    background-color: rgb(248, 144, 187); /* Cor de fundo do botão será rosa */
+    border: none; /* Sem borda */
+    width: 100px; /* Largura fixa de 100px */
+    height: 30px; /* Altura fixa de 30px */
 }
-
-.about-us p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    color: #ffc4c4; /* Cor suave */
-    margin: 15px 0;
-}
-
-.highlight {
-    font-weight: bold; /* Destaca esse parágrafo */
-}
-
-.thank-you {
-    font-style: italic; /* Adiciona estilo ao texto de agradecimento */
-    color: #9e2020; /* Combina com o título */
-}
-

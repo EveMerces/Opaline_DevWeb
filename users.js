@@ -1,50 +1,63 @@
-//Declaração da função save, que pela palavra async, indica que a função irá retornar uma promise no futuro da aplicação.
 async function save (){
-    let name = document.getElementByID("nome").value;
+    let name = document.getElementById("nome").value;
+    if (name == ''){
+        alert("Digite o nome de usuário!")
+        return
+    }
     let email = document.getElementById("email").value;
-    let cpf_cnpj = document.getElementById("cpf/cnpj").value
-    let birthday = document.getElementById("date").value;
+    if (email == ''){
+        alert("Digite um endereço de email válido!")
+        return
+    }
+    let birthday = document.getElementById("datanasc").value;
+    if (birthday == ''){
+        alert("Insira uma data de nascimento válida!")
+        return
+    }
     let password = document.getElementById("senha").value;
-    const CpfCnpj = "25652054000162";
+    if (password == '' || password.length < 6 ){
+        alert("Digite uma senha válida!")
+        return
+    }
+    let CpfCnpj = document.getElementById("cpfcnpj").value;
+    if (CpfCnpj == '' || CpfCnpj.length < 11 ){
+        alert("Digite um CPF ou CNPJ válidos!")
+        return
+    }
+    let termos = document.getElementById("termos").checked;
+    if (termos == false){
+        alert("Por favor, aceite os termos de uso!")
+    }
     let userType = 1
-    let termos = 1
     
-// Criação do objeto dados que recebe todas as informações que foram antes declaradas
     dados = {
           "name": name,
           "email": email,
-          "user_type_id": userType, 
+          "user_type_id": userType,
           "password": password,
           "cpf_cnpj": CpfCnpj,
           "terms": termos,
           "birthday": birthday
     }
-  // Chamada assíncrona com o fetch:
-  // Criamos a variável api que através da função fetch faz a requisição HTTP de POST no endpoint do servidor(url).
-  // A palavra await antes do fetch é usada para esperar pela resolução da promise, impedindo que o código prossiga até que a resposta seja obtida
-  // A propriedade do body possui o próprio objeto dados que criamos anteriormente convertido para JSON, pois é o formato esperado pelo servidor.
-  // O parâmetro headers é o cabeçalho da requisição que apenas informa que o corpo está no formato de JSON
+
     let api = await fetch("https://go-wash-api.onrender.com/api/user",{
       method: "POST",
       body:JSON.stringify(dados),
-          headers: {'content-type':'aplication/json'}
+          headers: {'content-type':'application/json'}
       });
-  // Verificações:
-  // Temos um if que caso a resposta da API seja bem sucedida, utiliza o método json na api para ler a resposta e converter de volta para JSON
-  // Utiliza-se também o await neste processo para aguardar a conversão da API.
-  // Após tudo isso, exibe no console através do console.log a resposta da API.
+
       if (api.ok){
           let resp = await api.json();
           console.log(resp);
           return
       }
-  // Caso a resposta não tenha sido bem sucedida:
-  // Tenta convertar a resposta da API para JSON também através do método json e exibe este erro no console
+
       let respError = await api.json();
       console.log(respError)
   }
 
 
 function cadastro(){
+    save();
     alert("Usuário cadastrado!");
 }
