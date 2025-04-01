@@ -4,11 +4,11 @@ Documentação de api para a utilização do projeto: https://github.com/EveMerc
 
 🔧 Funcionalidades
 
-🔹 Cadastro de Usuário: Permite criar uma conta na plataforma
-
-🔹 Login: Autentica o usuário e armazena sessão
-
 🔹 Página Inicial: Exibe produtos disponíveis na loja
+
+🔹 Sobre nós: Opaline Dev Web é um projeto de desenvolvimento web focado em criar soluções intuitivas, acessíveis e eficientes. Utilizamos tecnologias modernas para garantir qualidade, segurança e performance em nossas aplicações.
+
+🔹 Cadastro de Usuário: Permite criar uma conta na plataforma
 
 Tecnologias Utilizadas no Desenvolvimento:
 
