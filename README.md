@@ -6,7 +6,7 @@ Documentação de api para a utilização do projeto: https://github.com/EveMerc
 
 🔹 Página Inicial: Exibe produtos disponíveis na loja
 
-🔹 Sobre nós: Opaline Dev Web é um projeto de desenvolvimento web focado em criar soluções intuitivas, acessíveis e eficientes. Utilizamos tecnologias modernas para garantir qualidade, segurança e performance em nossas aplicações.
+🔹 Sobre nós: Projeto de desenvolvimento web voltado para criar soluções intuitivas e eficientes, com foco em qualidade, segurança e performance.
 
 🔹 Cadastro de Usuário: Permite criar uma conta na plataforma
 
