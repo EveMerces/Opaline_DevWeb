@@ -5,17 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <script src="users.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdf8f2;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        header {
+            text-align: center;
+        }
+        .main-title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #8B5E3B;
+        }
+        .main-nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .main-nav ul li {
+            display: inline;
+        }
+        .main-nav ul li a {
+            text-decoration: none;
+            color: #8B5E3B;
+            font-weight: bold;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #8B5E3B;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #8B5E3B;
+            border-radius: 4px;
+        }
+        input[type="checkbox"] {
+            margin-top: 10px;
+        }
+        input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #8B5E3B;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        input[type="button"]:hover {
+            background-color: #6E472E;
+        }
+    </style>
 </head>
 <body>
-    <form>
-        <label> Nome <input type = "text" name = "nome" id = "nome"/></label> 
-        <label> Email <input type = "email" name = "email" id = "email" /></label> 
-        <label> Data de nascimento <input type = "date" name = "datanasc" id = "datanasc" /></label> 
-        <label> CPF/CNPJ <input type = "text" name = "cpfcnpj" id = "cpfcnpj" /></label> 
-        <label> Senha <input type = "password" name = "senha" id = "senha" /></label> 
-        <label>Termos <input type = "checkbox" name = "termos" id = "termos"/></label>
-        <input type="button" value="Cadastrar" onclick="cadastro()"/>
-        
-    </form>
+    <div class="container">
+        <header>
+            <h1 class="main-title">CADASTRO</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre_nos.html">Sobre Nós</a></li>
+                    <li><a href="tela_cadastro.html">Cadastro</a></li>
+                </ul>
+            </nav>
+        </header>
+        <form>
+            <label> Nome <input type="text" name="nome" id="nome" /></label> 
+            <label> Email <input type="email" name="email" id="email" /></label> 
+            <label> Data de nascimento <input type="date" name="datanasc" id="datanasc" /></label> 
+            <label> CPF/CNPJ <input type="text" name="cpfcnpj" id="cpfcnpj" /></label> 
+            <label> Senha <input type="password" name="senha" id="senha" /></label> 
+            <label><input type="checkbox" name="termos" id="termos"/> Aceito os termos</label>
+            <input type="button" value="Cadastrar" onclick="cadastro()" />
+        </form>
+    </div>
 </body>
 </html>
