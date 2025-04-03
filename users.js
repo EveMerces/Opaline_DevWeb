@@ -54,14 +54,14 @@ async function save (){
       }else { 
         let respError = await api.json();
         console.log(respError)
-            if (responseErro['data']['errors'].password) {
+            if (respError.data.errors.password) {
                 alert('The password must be at least 6 characters.')
             } 
-            if (responseErro['data']['errors'].email) {
+            if (respError.data.errors.email) {
                 alert('The email has already been taken.')
             }
 
-            if (responseErro['data']['errors'].cpf_cnpj == null) {
+            if (respError.data.errors.cpf_cnpj == null) {
                 alert('cpf_cppj invalid.')
             } else {
                 alert('The cpf cnpj has already been taken.')
