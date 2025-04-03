@@ -54,9 +54,6 @@ async function save (){
       }else { 
         let respError = await api.json();
         console.log(respError)
-            if (respError.data.errors.password) {
-                alert('The password must be at least 6 characters.')
-            } 
             if (respError.data.errors.email) {
                 alert('The email has already been taken.')
             }
