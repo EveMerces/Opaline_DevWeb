@@ -1,102 +1,150 @@
+/* Definições gerais */
 body {
     color: #caa192;
     background-color: #6f3b39;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
-
+/* Cabeçalho e navegação */
 header {
     background-color: #492929;
-    text-align: center;
-    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 40px;
 }
-
-.quebra_linha {
+.quebra_linha{
     background-color: #4a2c2a;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    font-size: 14px;
+    padding:10px;
+    margin:10px;
 }
 
-
-nav ul {
+/* Navegação principal */
+.main-nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centraliza os itens na barra de navegação */
+    gap:380px; /* Espaçamento entre os itens *
+    list-style: none; /* Remove marcadores */
     padding: 0;
-    gap: 50px;
+    margin: 0;
 }
 
-nav ul li a {
-    color: #f8e7dd;
-    padding: 10px;
+.main-nav ul li {
+    text-align: center; /* Mantém os itens alinhados */
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
     font-weight: bold;
-}
-
-nav ul li a:hover {
-    background-color: #f49292;
-    color: #fff;
-}
-
-.main-title {
-    font-size: 32px;
     color: #f8e7dd;
-    text-align: center;
+    padding: 10px 15px; /* Adiciona espaçamento interno aos links */
+    border-radius: 5px; /* Bordas arredondadas para um visual mais amigável */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona suavidade na interação */
+}
+
+.main-nav ul li a:hover {
+    background-color: #f49292; /* Adiciona um fundo ao passar o mouse */
+    color: #fff; /* Altera a cor do texto no hover */
+}
+
+.main-nav ul li a:hover {
+    color: #9e4040; /* Efeito de destaque nos links ao passar o mouse */
+}
+
+/* Título Grande */
+.main-title {
+    font-size: 48px;
+    font-family: "Georgia", serif;
+    color: #f8e7dd;
     margin: 20px 0;
 }
+.main-title::after {
+    content: "✿"; /* Símbolo decorativo */
+    font-size: 50px;
+    color: #9e4040;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
 
+/* Layout das categorias */
 .categories {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
-    padding: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 10px;
 }
 
 .category {
     background-color: #fff;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.category:hover {
+    transform: translateY(-5px);
 }
 
 .category img {
     width: 100%;
     max-width: 250px;
     height: auto;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .category p {
+    margin: 8px 0;
     font-size: 16px;
     color: #4a2c2a;
 }
 
 .category p strong {
+    font-size: 18px;
     color: #8b1e1e;
 }
 
-.sobre-nós {
+.about-us {
     text-align: center;
-    margin: 20px auto;
+    max-width: 800px;
+    margin: 30px auto; /* Centraliza a seção */
     padding: 20px;
-    background-color: #ffffff;
-    border-radius: 5px;
+    background-color: #ffffff; /*Adiciona um fundo branco */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra leve */
 }
 
-.sobre-nós h2 {
-    font-size: 24px;
-    color: #c27878;
-    margin-bottom: 15px;
+.about-us h2 {
+    font-family: 'Georgia', serif; /* Fonte clássica e bonita */
+    font-size: 32px;
+    color: #c27878; /* Cor sofisticada */
+    margin-bottom: 20px;
 }
 
-.sobre-nós p {
-    font-size: 16px;
-    color: #ffc4c4;
-    margin: 10px 0;
+.about-us p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #ffc4c4; /* Cor suave */
+    margin: 15px 0;
 }
 
+.highlight {
+    font-weight: bold; /* Destaca esse parágrafo */
+}
 
-
-
-
+.thank-you {
+    font-style: italic; /* Adiciona estilo ao texto de agradecimento */
+    color: #9e2020; /* Combina com o título */
+}
