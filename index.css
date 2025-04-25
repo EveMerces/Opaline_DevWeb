@@ -30,7 +30,7 @@ header {
 .main-nav ul {
     display: flex;
     justify-content: center; /* Centraliza os itens na barra de navegação */
-    gap:380px; /* Espaçamento entre os itens *
+    gap:100px; /* Espaçamento entre os itens *
     list-style: none; /* Remove marcadores */
     padding: 0;
     margin: 0;
