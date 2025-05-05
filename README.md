@@ -6,9 +6,11 @@ Documentação de api para a utilização do projeto: https://github.com/EveMerc
 
 🔹 Página Inicial: Exibe produtos disponíveis na loja
 
-🔹 Sobre nós: Projeto de desenvolvimento web voltado para criar soluções intuitivas e eficientes, com foco em qualidade, segurança e performance.
+🔹 Sobre nós: Página com o conteúdo sobre a história da loja
 
 🔹 Cadastro de Usuário: Permite criar uma conta na plataforma
+
+🔹Login: Página de login de usuarios cadastrados anteriormente, utilizando API, BD.
 
 Tecnologias Utilizadas no Desenvolvimento:
 
