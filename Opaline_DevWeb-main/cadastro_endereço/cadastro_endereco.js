@@ -1,4 +1,5 @@
-async function cadastro_endereco (){
+async function cadastro_endereco (event){
+     event.preventDefault();
     let Titulo = document.getElementById("titulo").value
     if (Titulo == ''){
         alert("Digite o Título do local!")
@@ -32,16 +33,23 @@ async function cadastro_endereco (){
     dados = {
         "title": Titulo,
         "cep": CEP,
-        "adress": Endereco,
+        "address": Endereco,
         "number": Numero,
         "complement": Complemento
     }
     
-    let api = await fetch("",{
+    let api = await fetch("https://go-wash-api.onrender.com/api/auth/address",{
         method: "POST",
         body:JSON.stringify(dados),
-            headers: {'content-type':'application/json'},
-            Authorization: {}
-        });
+        headers: {'content-type':'application/json',
+    'Authorization': 'Bearer ' + usuario.access_token
+    }
+  });
 
+  if (api.ok) {
+    alert("Endereço cadastrado com sucesso!");
+    window.location.href = "listagem_enderecos.html";
+  } else {
+    alert("Erro ao cadastrar endereço.");
+  }
 }

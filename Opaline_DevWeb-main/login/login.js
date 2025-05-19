@@ -27,9 +27,9 @@ async function save() {
 
     if (api.ok) {
         let resp = await api.json();
-        console.log(resp);
+        localStorage.setItem("user", JSON.stringify(resp));
         alert("Login realizado com sucesso!");
-        window.location.href= "index.html"
+        window.location.href= "listagem_enderecos.html"
         return;
     } else {
         let respError = await api.json();
